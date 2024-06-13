@@ -1,0 +1,39 @@
+{
+    "Introduction":{
+        "Titre" :"",
+        "Reference":"",
+        "Description" : ""
+    },
+    "Backlog":{
+        "Titre" : "Backlog",
+        "Introduction":"Le backlog est une liste ordonées des tâches"
+    },
+    "Livrables" :
+    {
+        "Titre" : "Livrables",
+        "Introduction":"",
+        "Livrables": [
+            {
+                "Titre":"/Backlog",
+                "Description":"Backlog"
+            },
+            {
+                "Titre":"/docs",
+                "Description":"Documentation"
+            }
+        ]
+    },   
+    "References" :
+    {
+        "Titre" : "Références",
+        "Introduction":"",
+        "References": [
+            {
+                "Titre":"Autoformation",
+                "Lien":"#"
+            }
+           
+        ]
+    } 
+    
+}

@@ -1,0 +1,22 @@
+name: update-readme-file
+on:
+    push:
+      branches: [ "develop" ]
+      paths:
+        - backlog/**
+        - README.json
+jobs:
+  update-readme-file-job:
+    name: Mise à jour de fichier README.md depuis lab-web.json
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # inclure l'history de deux commit
+          submodules: true
+      - name: run update-readme-file.ps1
+        shell: pwsh
+        run: ./scripts/readme-file/update-readme-file.ps1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

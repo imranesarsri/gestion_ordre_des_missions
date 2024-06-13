@@ -1,0 +1,18 @@
+- Ordre des phases:
+    - 100: Introduction
+    - 200: Besoin
+    - 300: Agile
+    - 400: Process_de_development
+    - 500: Planification
+    - 600: Branche_fonctionnels
+    - 700: Branche_techniques
+    - 800: Conception
+    - 900: Conclusion
+
+
+- Ordre des packages:
+    - 0: pk_rapport
+    - 20: pkg_PriseDesServices
+    - 40: pkg_Absences
+    - 60: pkg_Conges
+    - 80: pkg_OrderDesMissions

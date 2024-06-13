@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+@import '../../../node_modules/admin-lte/dist/css/adminlte.min.css';
+@import '../../../node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '../../../node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '../../../node_modules/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+@import '../../../node_modules/admin-lte/plugins/jqvmap/jqvmap.min.css';
+@import '../../../node_modules/admin-lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css';
+@import '../../../node_modules/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css';
+@import '../../../node_modules/admin-lte/plugins/daterangepicker/daterangepicker.css';
+@import '../../../node_modules/admin-lte/plugins/summernote/summernote-bs4.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.direction-rtl {
+    direction: rtl !important;
+}
+
+.pink {
+    color: #ff7ea5;
+}
+
+.logoOfppt {
+    height: 130px;
+    width: auto;
+}

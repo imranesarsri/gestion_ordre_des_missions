@@ -1,0 +1,10 @@
+name,guard_name
+index-GradeController,web
+show-GradeController,web
+create-GradeController,web
+store-GradeController,web
+edit-GradeController,web
+update-GradeController,web
+destroy-GradeController,web
+export-GradeController,web
+import-GradeController,web

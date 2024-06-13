@@ -1,0 +1,92 @@
+/* ================ Form ================ */
+
+/*** Start style Form ***/
+
+/* style to package missions */
+.transport-marque,
+.transport-numéro-de-plaque,
+.transport-puissance-fiscale {
+    display: none;
+
+}
+
+/*** End style Form ***/
+
+
+/* ================ Attestation ================ */
+
+/***  Start style headerLogo ***/
+
+.headerLogo {
+    text-align: center;
+}
+
+
+.headerLogo div div {
+    border: 2px solid black;
+    padding: 1rem 3rem;
+    text-align: start;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.headerLogo div div p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/***  end style headerLogo ***/
+
+
+/*** Start style HeaderTitle ***/
+
+.headerTitle h2 {
+    border: 2px solid black;
+}
+
+/*** end style HeaderTitle ***/
+
+
+/*** Start style Main body ***/
+
+.bodyContent p {
+    margin-top: 0 !important;
+    margin-bottom: 0rem !important;
+    padding: 10px 0;
+}
+
+/*** end style Main body ***/
+
+
+/*** Start style Body Section signature ***/
+
+.signature div div h5 {
+    margin-bottom: 8rem;
+}
+
+.signature div div h5 span {
+    border-bottom: 1px solid black;
+}
+
+/*** End style Body Section signature ***/
+
+
+/*** Start Style foter ***/
+
+.footer>div {
+    border-top: 2px solid black;
+}
+
+.footer ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.firstPartOfFoter {
+    font-size: 14px;
+}
+
+/*** End Style foter ***/

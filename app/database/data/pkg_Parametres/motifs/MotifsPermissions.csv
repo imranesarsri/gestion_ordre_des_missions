@@ -1,0 +1,10 @@
+name,guard_name
+index-MotifController,web
+show-MotifController,web
+create-MotifController,web
+store-MotifController,web
+edit-MotifController,web
+update-MotifController,web
+destroy-MotifController,web
+export-MotifController,web
+import-MotifController,web

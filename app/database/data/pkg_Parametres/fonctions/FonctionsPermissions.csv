@@ -1,0 +1,10 @@
+name,guard_name
+index-FonctionController,web
+show-FonctionController,web
+create-FonctionController,web
+store-FonctionController,web
+edit-FonctionController,web
+update-FonctionController,web
+destroy-FonctionController,web
+export-FonctionController,web
+import-FonctionController,web

@@ -1,0 +1,3 @@
+prenom,nom,email,password,nom_arab,prenom_arab,cin,date_naissance,telephone,address,images,matricule,ville_id,fonction_id,ETPAffectation_id,grade_id,specialite_id,etablissement_id,avancement_id,created_at,updated_at
+Ali,Madani,madani@gmail.com,password123,علي,مدني,KB12312,1980-01-01,0606060606,Tanger branes,madani.jpg,1020,1,1,1,1,1,1,1,2023-01-01 00:00:00,2023-01-01 00:00:00
+Ahmed,Mohammed,mohammed@gmail.com,password123,احمد,محمد,KB12313,1980-01-01,0606060606,Tanger branes,mohammed.jpg,1022,1,1,1,1,1,1,1,2023-01-01 00:00:00,2023-01-01 00:00:00

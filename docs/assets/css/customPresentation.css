@@ -1,0 +1,17 @@
+
+
+.sectionHeader {
+    margin: 20% 0 !important;
+}
+
+.hiddenPresentation {
+    display: none !important;
+}
+
+:root {
+    --r-heading1-size: 3.5em;
+    --r-heading2-size: 2.6em;
+    --r-heading3-size: 1.3em;
+    --r-heading4-size: 1em;
+  }
+  

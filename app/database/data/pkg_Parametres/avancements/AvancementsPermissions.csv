@@ -1,0 +1,10 @@
+name,guard_name
+index-AvancementController,web
+show-AvancementController,web
+create-AvancementController,web
+store-AvancementController,web
+edit-AvancementController,web
+update-AvancementController,web
+destroy-AvancementController,web
+export-AvancementController,web
+import-AvancementController,web

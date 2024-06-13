@@ -1,0 +1,98 @@
+{
+    "Description":"Liste des packages avec des livrables personnalisés",
+    "DefaultAuthorizedDirectories":[
+        "docs/{{package_name}}",
+        "scripts",
+        "{{package_name}}"
+    ],
+    "LaravelAuthorizedDirectories":[
+        "{{directory_code}}/app/Exports/{{package_name}}",
+        "{{directory_code}}/app/Imports/{{package_name}}",
+        "{{directory_code}}/app/Http/Controllers/{{package_name}}",
+        "{{directory_code}}/app/Http/Requests/{{package_name}}",
+        "{{directory_code}}/app/Models/{{package_name}}",
+        "{{directory_code}}/app/Repositories/{{package_name}}",
+        "{{directory_code}}/resources/views/{{package_name}}",
+        "{{directory_code}}/routes/web.php",
+        "{{directory_code}}/routes/{{package_name}}.php",
+        "{{directory_code}}/database/factories/{{package_name}}",
+        "{{directory_code}}/database/migrations/{{package_name}}",
+        "{{directory_code}}/database/seeders/{{package_name}}",
+        "{{directory_code}}/tests/Feature/{{package_name}}",
+        "{{directory_code}}/tests/Unit/{{package_name}}",
+        "{{directory_code}}/lang/fr/{{package_name}}",
+        "{{directory_code}}/app/Exceptions/{{package_name}}",
+        "{{directory_code}}/app/Console/Commands/{{package_name}}"
+    ],
+    "Packages" : [
+        {
+            "Titre":"init-maquettes",
+            "Description":"init-maquettes",
+            "IsValidaionAvecFormateur":true,
+            "IsUseUnique":false,
+            "Chemins":[
+                "maquettes/"
+            ]
+        },
+        {
+            "Titre":"PriseDeService",
+            "Description":"get the right to edit User model",
+            "IsValidaionAvecFormateur":true,
+            "IsUseUnique":false,
+            "Chemins":[
+                "App/Model/User.php"
+            ]
+        },
+        {
+            "Titre":"backlog",
+            "Description":"Backlog de projet",
+            "IsValidaionAvecFormateur":true,
+            "IsUseUnique":false,
+            "Chemins":[
+                "docs/backlog/",
+                "backlog/"
+            ]
+        },
+        {
+            "Titre":"init-lab",
+            "Description":"Initialisation de dépôt",
+            "IsUseUnique":false,
+            "IsValidaionAvecFormateur":false,
+            "Chemins":[
+                ".github/",
+                ".vscode/",
+                "docs/_layouts/",
+                "docs/assets/",
+                "docs/_config.yml",
+                "docs/.gitignore",
+                "docs/Gemfile",
+                "docs/Gemfile.lock",
+                "docs/images/",
+                "docs/index.md",
+                "docs/presentation.md",
+                "docs/run_jekyll.ps1",
+                "README.json",
+                "README.md"
+            ]
+        },
+        {
+            "Titre":"init-app",
+            "Description":"Initialisation de code, Il est valide si le dossier app n'existe pas",
+            "IsValidaionAvecFormateur":true,
+            "IsUseUnique":true,
+            "Chemins":[
+                "app/"
+            ]
+        },
+        {
+            "Titre":"custom-css-rapport",
+            "Description":"Curstom css rapport et présentation",
+            "IsValidaionAvecFormateur":true,
+            "IsUseUnique":true,
+            "Chemins":[
+                "docs/assets/css/custom-presentation.css",
+                "docs/assets/css/custom-rapport.css"
+            ]
+        }
+    ]
+}

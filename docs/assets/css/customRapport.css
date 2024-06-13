@@ -1,0 +1,17 @@
+/* TODO ESSARRAJ : add comments */
+.hiddenRapport {
+    display: none !important;
+}
+
+/* 
+* Le code javascript add_anchor_link_to_titles() 
+* convert tous les titres en lien anchor
+*/
+a {
+    text-decoration: none;
+}
+
+
+ul li a {
+    color: black !important;
+}

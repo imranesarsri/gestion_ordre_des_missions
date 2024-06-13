@@ -1,0 +1,57 @@
+classDiagram
+    direction LR
+
+namespace pkg_PriseDesServices {
+    class Personnel {
+        +id: BigInt
+        +matricule: String
+        +prenom: String
+        +nom: String
+        +email: String
+        +password: String
+        +nom_arabe: String
+        +prenom_arabe: String
+        +cin: String
+        +date_naissance: Date
+        +telephone: String
+        +adresse: String
+        +images: String
+    }
+}
+namespace pkg_conges {
+    class Conge {
+        +id: BigInt
+        +date_debut: Date
+        +date_fin: Date
+        +created_at: Timestamp
+        +updated_at: Timestamp
+    }
+
+    class Motif {
+        +id: BigInt
+        +description: String
+        +created_at: Timestamp
+        +updated_at: Timestamp
+    }
+}
+
+namespace pkg_Absences {
+
+    class Jour_ferie {
+        +id: BigInt
+        +nom: String
+        +date_debut: Date
+        +date_fin: Date
+        +is_formateur: boolean
+        +is_adminstrateur: boolean
+    }
+
+    class Annee_juridique {
+        +id: BigInt
+        +annee: String
+    }
+}
+
+    Personnel "1..*" <-- "0..*" Conge 
+    Conge "0..*" <-- "1..1" Motif
+    Jour_ferie "*" --> "1" Annee_juridique 

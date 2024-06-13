@@ -1,0 +1,10 @@
+name,guard_name
+index-CongesController,web
+show-CongesController,web
+create-CongesController,web
+store-CongesController,web
+edit-CongesController,web
+update-CongesController,web
+destroy-CongesController,web
+export-CongesController,web
+import-CongesController,web

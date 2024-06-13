@@ -1,0 +1,13 @@
+name,guard_name
+index-MissionsController,web
+show-MissionsController,web
+moreDetails-MissionsController,web
+create-MissionsController,web
+store-MissionsController,web
+edit-MissionsController,web
+certificate-MissionsController,web
+update-MissionsController,web
+destroy-MissionsController,web
+export-MissionsController,web
+import-MissionsController,web
+imprimer-MissionsController,web

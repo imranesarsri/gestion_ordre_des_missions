@@ -1,0 +1,13 @@
+{
+
+	"Création chapitre": {
+		"scope": "markdown",
+		"prefix": "doc-item",
+		"body": [
+			"# $1",
+			"# Références";
+			"- [$2]()"
+		],
+		"description": "Création d'une chapitre dans docs"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../collaboration"
+		}
+	],
+
+	"settings": {
+
+        "plantuml.diagramsRoot": ".",
+		"plantuml.exportOutDir": "../docs/diagrammes/",
+		"mermaid-editor.generate.outputPath": "../docs/diagrammes/",
+		"mermaid-editor.generate.useCurrentPath" : false
+    }
+
+}

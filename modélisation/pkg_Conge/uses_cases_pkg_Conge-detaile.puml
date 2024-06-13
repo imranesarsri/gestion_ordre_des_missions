@@ -1,0 +1,26 @@
+@startuml  
+
+left to right direction
+
+actor Directeur as directeur
+actor ResponsableFormation as responsableFormation
+
+package "pkg_gestion_personnel.gestion_congés" {
+
+  directeur -- (Naviguer par établissement)
+  directeur -- (Gestion des congés)
+  
+  (Gestion des congés) <.. (Imprimer décision des congés) : extend
+  (Gestion des congés) <.. (Importer congés) : extend
+  (Gestion des congés) <.. (Exporter congés) : extend
+  (Gestion des congés) <.. (Filtrer par date) : extend
+  (Gestion des congés) <.. (Ajouter congés) : extend
+  (Gestion des congés) <.. (Consulter historique des congés) : extend
+  (Consulter historique des congés) <.. (Modifier) : extend
+  (Consulter historique des congés) <.. (supprimer) : extend
+
+  responsableFormation -- (Gestion des congés)
+  
+}
+
+@enduml

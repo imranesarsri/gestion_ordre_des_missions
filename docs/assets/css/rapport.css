@@ -1,0 +1,244 @@
+/* TODO Ali : Il faut télécharger le font en local */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FAFAFA;
+	font: 12pt "Roboto";
+}
+
+
+/* 
+ * Séparateur des pages
+ * Cette élément est ajouter automatiquement avant l'élément h1, 
+ * en utilisant javascript
+ */
+hr:first-of-type {
+	display: none;
+}
+
+hr {
+	/* init hr default style */
+	border-style: none;
+	border-width: 0px;
+
+	/* Simuler la nouvelle page */
+	background-color: #FAFAFA;
+	position: relative;
+	left: -1.03cm;
+	width: 21.03cm;
+	height: 2cm;
+	padding: 0px;
+	border-top: 1px #D3D3D3 solid;
+	border-bottom: 1px #D3D3D3 solid;
+	margin-top: 1cm;
+	margin-bottom: 1cm;
+
+}
+
+#presentation-icon {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.page {
+	width: 21cm;
+	/* min-height: 29.7cm; */
+	padding: 1cm;
+	margin: 1cm auto;
+	margin-top: 0px;
+
+	border: 1px #D3D3D3 solid;
+	border-radius: 5px;
+	background: white;
+	border: rgba(0, 0, 0, 0.2) solid 1px;
+}
+
+
+@page {
+	size: A4;
+	margin-top: 2cm;
+}
+
+@media print {
+
+	#menu_rapports {
+		display: none;
+	}
+
+	#presentation-icon,
+	hr {
+		display: none;
+	}
+
+	.page {
+		margin: 0;
+		padding-top: 0;
+		border: initial;
+		border-radius: initial;
+		width: initial;
+		min-height: initial;
+		box-shadow: initial;
+		background: #fff;
+		page-break-after: auto;
+	}
+}
+
+code:not(.language-mermaid) {
+	border: 1px solid #666;
+	border-radius: 2px;
+}
+
+/* 
+* Images
+*/
+/* Centrer les images */
+img {
+	display: block;
+	margin-left: auto;
+	margin: 15px auto;
+	max-width: 100%;
+
+}
+
+/* Nom de figure d'image */
+/* Par conception : le titre de figure est l'élément em situé aprés l'image */
+/* Il s'applique aussi sur un bloc de code  */
+img+em,
+pre+p>em {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	text-align: center;
+	font-style: italic;
+	font-size: 11pt;
+	color: #666;
+	margin: 10px 0 15px;
+}
+
+
+/* Style Definitions lik MS Word */
+p,
+li {
+	margin-top: 0cm;
+	margin-right: 0cm;
+	margin-bottom: 8.0pt;
+	margin-left: 0cm;
+	line-height: 107%;
+	font-size: 12.0pt;
+	text-align: justify;
+	line-height: 120%;
+}
+
+/* h1::before {
+	content: "</div><div class='page'>";
+	color: blue;
+  }
+  
+h1::after {
+	content: "";
+	color: red;
+  } */
+
+
+h1 {
+	/* saute de page avant h1 */
+	page-break-before: always;
+	margin-top: 12.0pt;
+	margin-bottom: 1pt;
+	margin: 2rem 0;
+	font-size: 25.0pt;
+	color: #2E74B5;
+}
+
+h2 {
+	font-size: 18.0pt;
+	margin: 1.5rem 0 1rem;
+	color: #2E74B5;
+}
+
+h3 {
+	font-size: 15.0pt;
+	margin: 0.75rem 0 0.5rem;
+	color: #1F4D78;
+}
+
+h4 {
+	font-size: 14.0pt;
+	margin: 0.5rem 0 0.25rem;
+	color: #2E74B5;
+	font-style: italic;
+}
+
+h5 {
+	font-size: 13.0pt;
+	margin: 0.25rem 0 0.2rem;
+	color: #2E74B5;
+}
+
+h6 {
+	font-size: 12.0pt;
+	margin: 1.2pt 0 1pt;
+	color: #1F4D78;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	line-height: 107%;
+	page-break-after: avoid;
+	font-weight: normal;
+}
+
+
+/* Table de matière */
+
+#table-de-matiere+ul li a {
+	font-weight: bold;
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #333;
+	margin-bottom: 5px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+#table-de-matiere+ul {
+	list-style-type: none;
+}
+
+#table-de-matiere+ul li a:hover {
+	color: #777;
+	/* Change text color on hover */
+}
+
+
+#menu_rapports {
+	text-align: center;
+	margin: 5px;
+}
+
+#menu_rapports i {
+	color: #2E74B5;
+	font-size: 30px;
+	padding-right: 3px;
+}
+
+#menu_rapports i:hover {
+	color: #388bd7;
+}
+
+#menu_rapports i:visited {
+	color: #0c5294;
+}

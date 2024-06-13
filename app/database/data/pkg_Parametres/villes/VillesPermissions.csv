@@ -1,0 +1,10 @@
+name,guard_name
+index-VilleController,web
+show-VilleController,web
+create-VilleController,web
+store-VilleController,web
+edit-VilleController,web
+update-VilleController,web
+destroy-VilleController,web
+export-VilleController,web
+import-VilleController,web

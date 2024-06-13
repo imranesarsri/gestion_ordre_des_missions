@@ -1,0 +1,18 @@
+@startuml  
+
+left to right direction
+
+
+actor Directeur as directeur
+
+package cas_utilisation_directeur {
+
+  directeur -- (Gestion catégorie)
+  directeur -- (Gestion pris de service)
+  directeur -- (Gestion congés)
+  directeur -- (Gestion absences)
+  directeur -- (Gestion order de mission)
+
+}  
+
+@enduml

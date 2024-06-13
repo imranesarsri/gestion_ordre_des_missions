@@ -1,0 +1,19 @@
+[
+    {
+        "name": "pkg_PriseDeServices",
+        "titre": " Prise de Services"
+    },
+    {
+        "name": "pkg_Absences",
+        "titre": "Absences"
+    },
+    {
+        "name": "pkg_Conges",
+        "titre": "Congés"
+    },
+
+    {
+        "name": "pkg_OrderDeMission",
+        "titre": "Ordre des Missions"
+    }
+]

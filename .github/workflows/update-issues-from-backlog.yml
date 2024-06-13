@@ -1,0 +1,25 @@
+name: update-issues-from-backlog
+on:
+    push:
+      branches: [ "develop" ]
+      paths:
+        - backlog/**
+permissions: write-all
+jobs:
+  create-or-update-issues-job:
+    permissions: write-all
+    name: Création ou mettre à jour les issues
+    runs-on: ubuntu-latest
+   
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # inclure l'history de deux commit
+          submodules: true
+      - name: run update-issues-from-backlog.ps1.ps1
+        shell: pwsh
+        run: ./scripts/issues/update-issues-from-backlog.ps1 ${{github.repository_owner}}
+        env:
+          GH_TOKEN: ${{ secrets.GHPROJECT_TOKEN }}
+          

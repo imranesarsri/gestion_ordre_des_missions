@@ -1,0 +1,25 @@
+@startuml  
+
+left to right direction
+
+
+actor Directeur as directeur
+actor ResponsableFormation as responsableFormation
+
+package gestion_personnel.pkg_Absences {
+
+  directeur -- (Naviguer par établissement)
+  directeur -- (List des absences)
+  (List des absences)  <.. (Imprimer absentisment) : extend
+  (List des absences)  <.. (importer des absences) : extend
+  (List des absences)  <.. (Exporter des absences) : extend
+  (List des absences)  <.. (Filter par année) : extend
+  (List des absences)  <.. (Filter par motif) : extend
+  (List des absences)  <.. (Ajouter absences) : extend
+  (List des absences)  <.. (Consulter l'historique des absences du personnel ) : extend
+
+  responsableFormation -- (List des absences)
+  
+}  
+
+@enduml

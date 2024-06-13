@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="{{ site.locale | default: "en-US" }}">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/presentation/dist/reveal.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/presentation/dist/theme/solicode.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/presentation.css">
+        <title> Présentation </title>
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section 
+                data-visibility="counted"
+                data-markdown data-separator="<!-- new slide -->" 
+                data-separator-vertical="<!-- new detail-->"
+                data-separator-notes="^<!-- note -->"
+                >
+                    <textarea data-template>
+                        {{ content  }}
+                      </textarea>
+                </section> 
+            </div>
+      </div>
+    </body>
+    <script src="{{site.baseurl}}/assets/presentation/plugin/markdown/markdown.js"></script>
+   
+    <script src="{{site.baseurl}}/assets/presentation/dist/reveal.js"></script>
+ 
+    <script>
+Reveal.initialize({
+// Display presentation control arrows
+ // Display a presentation progress bar
+ progress: true,
+ slideNumber: 'c/t',
+ showSlideNumber: 'all',
+ history: true,
+ keyboard: true,
+ jumpToSlide: true,
+ disableLayout: false,
+plugins: [ RevealMarkdown ],
+ 
+  // resolutions. Can be specified using percentage units.
+  width: "100%",
+  height: "100%",
+
+  // Factor of the display size that should remain empty around
+  // the content
+  margin: 0,
+
+  // Bounds for smallest/largest possible scale to apply to content
+  minScale: 0.2,
+  maxScale: 2.0,
+  showNotes: false,
+
+
+});
+    </script>
+
+
+</html>

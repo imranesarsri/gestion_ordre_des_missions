@@ -1,0 +1,36 @@
+name: Révision de code
+on:
+  pull_request
+# on:
+#   pull_request:
+#     types: [opened, edited, reopened, synchronize]
+jobs:
+  validation-pullrequest:
+    name: Validation de pullrequest
+    runs-on: ubuntu-latest
+    permissions:
+      issues: read
+      pull-requests: write
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0 # include all history and branches, default is 1
+          submodules: true
+      - name: Find linked issues
+        uses: nearform-actions/github-action-check-linked-issues@v1
+        id: check-linked-issues
+        with:
+          exclude-branches: "main"
+      - name : update scripts code from default branch 
+        shell: pwsh
+        run : |
+          git config --global user.name "ESSARRAJ"
+          git config --global user.email "essarraj.fouad@gmail.com"
+          git submodule update --remote
+      - name: run code-review.ps1
+        shell: pwsh
+        run: ./scripts/code-review/code-review.ps1 "${{ github.event.pull_request.title }}" ${{github.event.pull_request.commits}} ${{ steps.check-linked-issues.outputs.issues }}
+        env:
+          GH_TOKEN: ${{ secrets.GHPROJECT_TOKEN }}

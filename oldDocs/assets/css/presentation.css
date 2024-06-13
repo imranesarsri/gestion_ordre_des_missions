@@ -1,0 +1,12 @@
+.min_titre {
+    font-size: 30px !important;
+}
+
+/* Ne pas afficher les noms des figures */
+img+em {
+    display: none;
+}
+
+section {
+    top: 0px !important
+}

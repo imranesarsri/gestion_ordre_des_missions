@@ -1,0 +1,69 @@
+classDiagram
+    direction RL
+
+namespace pkg_PriseDeService {
+    class Personnel {
+        +id: BigInt
+        +prenom: String
+        +nom: String
+        +email: String
+        +password: String
+        +nom_arabe: String
+        +prenom_arabe: String
+        +cin: String
+        +date_naissance: Date
+        +telephone: String
+        +adresse: String
+        +images: String
+        +matricule: String
+        +ville_id: BigInt
+        +fonction_id: BigInt
+        +etp_affectation_id: BigInt
+        +grade_id: BigInt
+        +specialite_id: BigInt
+        +etablissement_id: BigInt
+        +avancement_id: BigInt
+    }
+}
+
+namespace pkg_OrderDesMissions {
+
+    class Mission {
+        +id: BigInt
+        +numero_mission: Int
+        +nature: String
+        +lieu: String
+        +type_de_mission: String
+        +numero_ordre_mission: Int
+        +data_ordre_mission: Date
+        +date_debut: Date
+        +date_fin: Date
+        +date_depart: Date
+        +heure_de_depart: Time
+        +date_return: Date
+        +heure_de_return: Time
+    }
+
+    class MoyensTransport {
+        +id: BigInt
+        +nom: String
+        +remarque: String
+    }
+
+    class Transports {
+        +id: BigInt
+        +transport_utiliser: String
+        +marque: String
+        +puissance_fiscal: String
+        +numiro_plaque: String
+        +user: Int
+        +moyens_transports_id: BigInt
+        +mission_id: BigInt
+    }
+
+
+}
+
+    Personnel "*" --> "1..*" Mission 
+    Mission "1..*" --> "0..*" Transports 
+    MoyensTransport "1..*" --> "0..*" Transports 

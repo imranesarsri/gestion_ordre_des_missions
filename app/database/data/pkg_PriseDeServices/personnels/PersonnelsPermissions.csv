@@ -1,0 +1,10 @@
+name,guard_name
+index-PersonnelController,web
+show-PersonnelController,web
+create-PersonnelController,web
+store-PersonnelController,web
+edit-PersonnelController,web
+update-PersonnelController,web
+destroy-PersonnelController,web
+export-PersonnelController,web
+import-PersonnelController,web

@@ -1,0 +1,10 @@
+name,guard_name
+index-EtablissementController,web
+show-EtablissementController,web
+create-EtablissementController,web
+store-EtablissementController,web
+edit-EtablissementController,web
+update-EtablissementController,web
+destroy-EtablissementController,web
+export-EtablissementController,web
+import-EtablissementController,web

@@ -1,0 +1,10 @@
+name,guard_name
+index-SpecialiteController,web
+show-SpecialiteController,web
+create-SpecialiteController,web
+store-SpecialiteController,web
+edit-SpecialiteController,web
+update-SpecialiteController,web
+destroy-SpecialiteController,web
+export-SpecialiteController,web
+import-SpecialiteController,web
